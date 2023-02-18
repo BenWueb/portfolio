@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import NavbarMobile from "./NavbarMobile";
 import { motion } from "framer-motion";
 
 function Navbar() {
@@ -19,30 +19,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="nav-container">
-        <motion.h5
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 2 } }}
-        >
-          BW
-        </motion.h5>
-        <div className="menu">
-          <motion.ul variants={container} initial="hidden" animate="show">
-            <motion.li variants={listItem} className="menu-item">
-              Projects
-            </motion.li>
-            <motion.li variants={listItem} className="menu-item">
-              Contact
-            </motion.li>
-            <motion.li variants={listItem} className="menu-item">
-              About
-            </motion.li>
-            <motion.button variants={listItem} className="resume btn">
-              Resume
-            </motion.button>
-          </motion.ul>
-        </div>
-      </nav>
+      <NavbarMobile />
     </>
   );
 }

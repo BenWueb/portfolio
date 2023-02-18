@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import travel from "../assets/Travel screenshot.png";
 import kitchen from "../assets/Joans Kitchen Screenshot.png";
 import { FaExternalLinkAlt } from "react-icons/fa";

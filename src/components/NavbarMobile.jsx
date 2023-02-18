@@ -5,7 +5,7 @@ import { MdOutlineClose } from "react-icons/md";
 
 function NavbarMobile() {
   const [menuVisible, setMenuVisible] = useState(false);
-  const [windowWidth, setWindowWidth] = useState("");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleWindowResize = () => {
