@@ -16,12 +16,7 @@ function About() {
               But for me, the most rewarding part of being a web developer is
               seeing the impact that my work has on people's lives. I'm
               constantly inspired by the way that technology can connect people,
-              improve businesses, and make the world a better place. <br />{" "}
-              <br />
-              If you're interested in collaborating on a web development
-              project, or if you just want to learn more about my work, feel
-              free to get in touch. I'm always happy to connect with fellow
-              developers and potential clients. <br /> <br />
+              improve businesses, and make the world a better place.
             </p>
           </div>
           <div className="about-image">
