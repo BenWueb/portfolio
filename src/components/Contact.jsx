@@ -10,7 +10,7 @@ function Contact() {
           potential clients!
         </p>
         <a href="mailto:ben.wuebker@gmail.com">
-          <button className="btn resume">Contact</button>
+          <button className="btn contact-resume">Contact</button>
         </a>
       </section>
     </div>

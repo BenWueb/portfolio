@@ -151,12 +151,20 @@ p {
   border: 2px solid var(--primary);
   padding: 0.5rem 1.5rem;
   font-size: var(--fs-1000);
-
-  width: 100%;
-  padding: 1rem 3rem;
 }
+
 .contact-section a {
   width: 100%;
+}
+
+.contact-resume {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 0.5rem 1.5rem;
+  font-size: var(--fs-1000);
+  width: 100%;
+  padding: 1rem 3rem;
 }
 
 .mobile-menu-icon {
