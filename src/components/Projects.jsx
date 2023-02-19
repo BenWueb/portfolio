@@ -6,7 +6,7 @@ function Projects() {
   return (
     <>
       <section className="projects-container">
-        <h4>Some Things I've Built</h4>
+        <h2>Some Things I've Built</h2>
         <div className="project">
           <div className="text-container">
             <div className="description">

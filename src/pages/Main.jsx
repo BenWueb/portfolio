@@ -3,6 +3,7 @@ import Tools from "../components/Tools";
 import About from "../components/About";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Articles from "../components/Articles";
 
 function Main() {
   return (
@@ -11,6 +12,7 @@ function Main() {
       <Tools />
       <About />
       <Projects />
+      <Articles />
       <Contact />
     </>
   );

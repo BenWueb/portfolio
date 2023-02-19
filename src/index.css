@@ -21,7 +21,7 @@
   --primary: #bb86fc;
   --background: #121212;
   --overlay-5: rgb(25, 25, 25);
-  --overlay-7: rgb(45, 45, 45);
+  --overlay-7: rgb(35, 35, 35);
   --overlay-9: rgba(255, 255, 255, 0.09);
   --overlay-12: rgba(255, 255, 255, 0.12);
   --overlay-16: rgba(255, 255, 255, 0.16);
@@ -117,6 +117,7 @@ h3 {
 
 h4 {
   font-size: var(--fs-900);
+  line-height: 2.5rem;
 }
 
 h5 {
@@ -125,6 +126,11 @@ h5 {
 
 p {
   font-size: var(--fs-1200);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
 
 .nav-container {
@@ -188,8 +194,8 @@ p {
   position: fixed;
   right: 0;
   top: 0;
-  width: 85%;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -199,7 +205,7 @@ p {
 }
 
 .mobile-menu-item {
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
   font-weight: 500;
 }
 
@@ -208,8 +214,9 @@ p {
   color: white;
   border: 3px solid white;
   padding: 0.5rem 1.5rem;
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
   font-weight: 500;
+  box-shadow: none;
 }
 
 /* .mobile-menu ul {
@@ -349,6 +356,10 @@ p {
 .projects-container {
   width: 60%;
   margin: auto;
+}
+
+.projects-container h2 {
+  margin-bottom: 2rem;
 }
 
 .project {
@@ -521,6 +532,84 @@ p {
   font-size: var(--fs-1000);
 }
 
+/***** Article *****/
+
+.articles-container {
+  padding: 2rem;
+  margin: 8rem 0;
+}
+
+.articles-container h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.article-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 20rem));
+  justify-content: center;
+  gap: 2rem;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+
+  height: 25rem;
+  width: 20rem;
+  background-color: var(--overlay-5);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.25s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--overlay-7);
+}
+
+.article-card h5 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary);
+}
+
+.article-card p {
+  font-size: var(--fs-1100);
+}
+
+.article-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.article-container h1 {
+  text-align: center;
+  margin: 4rem 0;
+  line-height: 8rem;
+  color: var(--secondary);
+}
+
+.article-container h2 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.article-container p {
+  font-size: var(--fs-1000);
+  margin: 2rem 0;
+}
+
+.article-container li {
+  list-style-type: decimal;
+  font-size: var(--fs-1000);
+  margin-bottom: 2rem;
+}
+
+.article-container span {
+  color: var(--secondary);
+}
+
 @media screen and (max-width: 1660px) {
   .projects-container {
     width: 80%;
@@ -543,7 +632,7 @@ p {
   .about-me {
   }
 
-  .about-me h4 {
+  .about-me h2 {
     text-align: center;
     margin-bottom: 2rem;
   }
@@ -556,7 +645,7 @@ p {
     flex-direction: column;
   }
 
-  .projects-container h4 {
+  .projects-container h2 {
     text-align: center;
   }
   .text-container,

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function NavbarMobile() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -58,7 +59,9 @@ function NavbarMobile() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { duration: 2 } }}
         >
-          BW
+          <Link className="link" to="/">
+            BW
+          </Link>
         </motion.h5>
 
         {windowWidth <= 640 ? (
@@ -105,6 +108,12 @@ function NavbarMobile() {
                     variants={mobileListItem}
                     className="mobile-menu-item"
                   >
+                    Articles
+                  </motion.li>
+                  <motion.li
+                    variants={mobileListItem}
+                    className="mobile-menu-item"
+                  >
                     Contact
                   </motion.li>
                   <motion.li
@@ -128,6 +137,9 @@ function NavbarMobile() {
             <motion.ul variants={container} initial="hidden" animate="show">
               <motion.li variants={listItem} className="menu-item">
                 Projects
+              </motion.li>
+              <motion.li variants={listItem} className="menu-item">
+                Articles
               </motion.li>
               <motion.li variants={listItem} className="menu-item">
                 Contact
