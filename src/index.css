@@ -125,7 +125,7 @@ h5 {
 }
 
 p {
-  font-size: var(--fs-1200);
+  font-size: var(--fs-1100);
 }
 
 .link {
@@ -151,12 +151,17 @@ p {
   gap: 2rem;
 }
 
+.menu li:hover {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
 .resume {
   background-color: transparent;
   color: var(--primary);
   border: 2px solid var(--primary);
   padding: 0.5rem 1.5rem;
-  font-size: var(--fs-1000);
+  font-size: 1rem;
 }
 
 .contact-section a {
@@ -264,7 +269,7 @@ p {
   font-size: var(--fs-600);
 }
 
-.cta-container h4 {
+.name {
   color: var(--secondary);
 }
 
@@ -279,7 +284,7 @@ p {
 
 .tools {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
   gap: 2rem;
   padding: 4rem 0;
   border-radius: 10px;
@@ -291,8 +296,8 @@ p {
   display: flex;
 
   align-items: center;
-  height: 4rem;
-  width: 15rem;
+  height: 6rem;
+  width: 18rem;
   border-radius: 10px;
   padding: 1rem;
 }
@@ -300,7 +305,7 @@ p {
 .tool-container p {
   text-align: center;
   width: 100%;
-  font-size: var(--fs-1100);
+  font-size: var(--fs-1000);
 }
 
 .about-me {
@@ -354,7 +359,7 @@ p {
 /**** Project Section *****/
 
 .projects-container {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -376,6 +381,7 @@ p {
   position: absolute;
   width: 50%;
   left: 0;
+  top: 30%;
 }
 
 .text-container h5 {
@@ -395,12 +401,12 @@ p {
   margin-bottom: 1rem;
   border-radius: 15px;
   padding: 1rem;
-  font-size: var(--fs-1200);
+  font-size: var(--fs-1000);
 }
 
 .project-image {
-  height: 300px;
-  width: 600px;
+  height: 400px;
+  width: 800px;
   border-radius: 15px;
   overflow: hidden;
 
@@ -453,6 +459,7 @@ p {
   position: absolute;
   width: 50%;
   right: 0;
+  top: 18%;
 }
 
 .text-container-reverse h5 {
@@ -475,12 +482,12 @@ p {
   border-radius: 15px;
   padding: 1rem;
   text-align: right;
-  font-size: var(--fs-1200);
+  font-size: var(--fs-1000);
 }
 
 .project-image-reverse {
-  height: 300px;
-  width: 600px;
+  height: 400px;
+  width: 800px;
   border-radius: 15px;
   overflow: hidden;
   z-index: -1;
@@ -603,6 +610,15 @@ p {
 .article-container li {
   list-style-type: decimal;
   font-size: var(--fs-1000);
+  margin-bottom: 1rem;
+}
+
+.article-container a {
+  color: var(--secondary);
+}
+
+.helpful-links {
+  color: var(--secondary);
   margin-bottom: 2rem;
 }
 
@@ -617,18 +633,6 @@ p {
 }
 
 @media screen and (max-width: 810px) {
-  .tools {
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 12rem));
-    gap: 1rem;
-    padding: 4rem 0;
-  }
-
-  .tool-container {
-    height: 3rem;
-    width: 12rem;
-    padding: 0.5rem;
-  }
-
   .about-me {
   }
 
@@ -684,6 +688,10 @@ p {
 }
 
 @media screen and (max-width: 630px) {
+  .article-container h1 {
+    line-height: 6rem;
+  }
+
   .container {
     padding: 1rem;
   }
@@ -796,5 +804,35 @@ p {
 
   .contact-section a {
     width: 100%;
+  }
+
+  .article-card-container {
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  .article-card {
+    justify-content: center;
+    align-items: center;
+
+    height: 4rem;
+    width: 18rem;
+
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+
+  .article-card p {
+    display: none;
+  }
+
+  .article-card h5 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .article-container h1 {
+    line-height: 4rem;
   }
 }

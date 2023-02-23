@@ -52,7 +52,9 @@ function Header() {
         >
           <motion.h4 variants={listItem}>Hi, my name is</motion.h4>
 
-          <motion.h1 variants={listItem}>Ben Wuebker.</motion.h1>
+          <motion.h1 variants={listItem} className="name">
+            Ben Wuebker.
+          </motion.h1>
           <motion.h1 variants={listItem}>
             I build things using
             <AnimatePresence>
@@ -73,7 +75,11 @@ function Header() {
             React, Design, JavaScript, and various other frameworks to bring my
             ideas to life.
           </motion.p>
-          <motion.button variants={listItem} className="btn cta-btn">
+          <motion.button
+            variants={listItem}
+            className="btn cta-btn"
+            onClick={() => window.location.replace("/#projects")}
+          >
             View Portfolio
           </motion.button>
         </motion.div>

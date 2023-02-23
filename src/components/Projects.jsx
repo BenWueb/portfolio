@@ -5,7 +5,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 function Projects() {
   return (
     <>
-      <section className="projects-container">
+      <section className="projects-container" id="projects">
         <h2>Some Things I've Built</h2>
         <div className="project">
           <div className="text-container">

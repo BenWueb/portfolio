@@ -135,16 +135,32 @@ function NavbarMobile() {
         ) : (
           <div className="menu">
             <motion.ul variants={container} initial="hidden" animate="show">
-              <motion.li variants={listItem} className="menu-item">
+              <motion.li
+                variants={listItem}
+                className="menu-item"
+                onClick={() => window.location.replace("/#projects")}
+              >
                 Projects
               </motion.li>
-              <motion.li variants={listItem} className="menu-item">
+              <motion.li
+                variants={listItem}
+                className="menu-item"
+                onClick={() => window.location.replace("/#articles")}
+              >
                 Articles
               </motion.li>
-              <motion.li variants={listItem} className="menu-item">
+              <motion.li
+                variants={listItem}
+                className="menu-item"
+                onClick={() => window.location.replace("/#contact")}
+              >
                 Contact
               </motion.li>
-              <motion.li variants={listItem} className="menu-item">
+              <motion.li
+                variants={listItem}
+                className="menu-item"
+                onClick={() => window.location.replace("/#about")}
+              >
                 About
               </motion.li>
               <motion.button variants={listItem} className="resume btn">

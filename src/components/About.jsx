@@ -3,7 +3,7 @@ import about from "../assets/1203141756-PhotoRoom_edited.jpg";
 function About() {
   return (
     <>
-      <section className="about-me">
+      <section className="about-me" id="about">
         <h2>About Me</h2>
         <div className="about-me-container">
           <div className="about-text-container">
