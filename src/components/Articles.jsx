@@ -48,6 +48,20 @@ function Articles() {
               </p>
             </div>
           </Link>
+          <Link
+            className="link"
+            to="/content-optimization-for-search-engine-optimization"
+          >
+            <div className="article-card">
+              <h5>Content Optimization for SEO</h5>
+              <p>
+                The importance of website content cannot be overstated. In
+                today's digital world, the content on your website is one of the
+                most important factors that determine the success of your online
+                business.
+              </p>
+            </div>
+          </Link>
         </div>
       </section>
     </div>

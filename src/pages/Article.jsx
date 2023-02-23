@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet";
+
 function Article() {
   return (
     <>
+      <Helmet>
+        <title>Guide to Website Accessibility</title>
+        <meta name="description" content="A guide to website accessibility" />
+      </Helmet>
       <div className="article-container">
         <header>
           <h1>Guide to Website Accessibility</h1>

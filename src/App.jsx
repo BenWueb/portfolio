@@ -4,6 +4,7 @@ import Article from "./pages/Article";
 import CtaArticle from "./pages/CtaArticle";
 import NavArticle from "./pages/NavArticle";
 import LandingArticle from "./pages/LandingArticle";
+import SeoArticle from "./pages/SeoArticle";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
             <Route
               path="/creating-an-effective-landing-page"
               element={<LandingArticle />}
+            />
+            <Route
+              path="/content-optimization-for-search-engine-optimization"
+              element={<SeoArticle />}
             />
           </Routes>
         </Router>

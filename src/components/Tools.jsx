@@ -10,6 +10,7 @@ import tailwind from "../assets/tailwind-css-2.svg";
 import mysql from "../assets/mysql-6.svg";
 import graphql from "../assets/graphql-logo-2.svg";
 import wordpress from "../assets/wordpress-blue.svg";
+import seo from "../assets/google-custom-search.svg";
 
 function Tools() {
   const toolsContainer = {
@@ -38,6 +39,14 @@ function Tools() {
           className="tools"
         >
           <motion.div variants={listItem} className="tool-container">
+            <img src={react} alt="" />
+            <p>React</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={js} alt="" />
+            <p>Javascript</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
             <img src={aws} alt="" />
             <p>Amazon Web Services</p>
           </motion.div>
@@ -50,20 +59,12 @@ function Tools() {
             <p>Google Firebase</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
-            <img src={js} alt="" />
-            <p>Javascript</p>
-          </motion.div>
-          <motion.div variants={listItem} className="tool-container">
             <img src={mongodb} alt="" />
             <p>MongoDB</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={node} alt="" />
             <p>NodeJS</p>
-          </motion.div>
-          <motion.div variants={listItem} className="tool-container">
-            <img src={react} alt="" />
-            <p>React</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={tailwind} alt="" />
@@ -80,6 +81,10 @@ function Tools() {
           <motion.div variants={listItem} className="tool-container">
             <img src={wordpress} alt="" />
             <p>Wordpress</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={seo} alt="" />
+            <p>Search Engine Optimization</p>
           </motion.div>
         </motion.div>
       </section>
