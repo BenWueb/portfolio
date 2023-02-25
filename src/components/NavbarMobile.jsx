@@ -135,6 +135,11 @@ function NavbarMobile() {
         ) : (
           <div className="menu">
             <motion.ul variants={container} initial="hidden" animate="show">
+              <Link className="link" to="/services">
+                <motion.li variants={listItem} className="menu-item">
+                  Services
+                </motion.li>
+              </Link>
               <motion.li
                 variants={listItem}
                 className="menu-item"

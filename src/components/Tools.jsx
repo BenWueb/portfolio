@@ -11,6 +11,7 @@ import mysql from "../assets/mysql-6.svg";
 import graphql from "../assets/graphql-logo-2.svg";
 import wordpress from "../assets/wordpress-blue.svg";
 import seo from "../assets/google-custom-search.svg";
+import python from "../assets/python-5.svg";
 
 function Tools() {
   const toolsContainer = {
@@ -85,6 +86,10 @@ function Tools() {
           <motion.div variants={listItem} className="tool-container">
             <img src={seo} alt="" />
             <p>Search Engine Optimization</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={python} alt="" />
+            <p>Python</p>
           </motion.div>
         </motion.div>
       </section>

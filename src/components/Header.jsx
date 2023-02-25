@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [index, setIndex] = useState(0);
@@ -75,13 +76,11 @@ function Header() {
             React, Design, JavaScript, and various other frameworks to bring my
             ideas to life.
           </motion.p>
-          <motion.button
-            variants={listItem}
-            className="btn cta-btn"
-            onClick={() => window.location.replace("/#projects")}
-          >
-            View Portfolio
-          </motion.button>
+          <Link to="/services">
+            <motion.button variants={listItem} className="btn cta-btn">
+              View Services
+            </motion.button>
+          </Link>
         </motion.div>
       </section>
     </>

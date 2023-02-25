@@ -11,9 +11,7 @@ function SeoArticle() {
         />
       </Helmet>
       <div className="article-container">
-        <head>
-          <h1>Content Optimization for SEO</h1>
-        </head>
+        <h1>Content Optimization for SEO</h1>
 
         <article>
           <p>
@@ -100,25 +98,50 @@ function SeoArticle() {
             engaging content that will help your website stand out in search
             engine results.
           </p>
-          <h3>Helpful Links</h3>
-          <a href="https://moz.com/beginners-guide-to-seo">
-            Moz – The Beginner's Guide to SEO
-          </a>
-          <a href="https://yoast.com/ultimate-guide-to-seo/">
-            Yoast – The Ultimate Guide to SEO
-          </a>
-          <a href="https://ahrefs.com/blog/blogging-for-business/">
-            Ahrefs – Blogging for Business: A Guide to Content That Drives
-            Traffic and Leads
-          </a>
-          <a href="https://blog.hubspot.com/marketing/content-strategy-guide">
-            HubSpot – How to Create a Content Strategy That Actually Drives
-            Organic Traffic
-          </a>
-          <a href="https://www.searchenginejournal.com/create-content-earns-links-increases-traffic/289441/">
-            Search Engine Journal – How to Create Content That Earns Links &
-            Increases Your Traffic
-          </a>
+          <h3 className="helpful-links">Helpful Links</h3>
+
+          <ol>
+            <li>
+              <a target="_build" href="https://moz.com/beginners-guide-to-seo">
+                Moz – The Beginner's Guide to SEO
+              </a>
+            </li>
+            <li>
+              <a
+                target="_build"
+                href="https://yoast.com/ultimate-guide-to-seo/"
+              >
+                Yoast – The Ultimate Guide to SEO
+              </a>
+            </li>
+            <li>
+              <a
+                target="_build"
+                href="https://ahrefs.com/blog/blogging-for-business/"
+              >
+                Ahrefs – Blogging for Business: A Guide to Content That Drives
+                Traffic and Leads
+              </a>
+            </li>
+            <li>
+              <a
+                target="_build"
+                href="https://blog.hubspot.com/marketing/content-strategy-guide"
+              >
+                HubSpot – How to Create a Content Strategy That Actually Drives
+                Organic Traffic
+              </a>
+            </li>
+            <li>
+              <a
+                target="_build"
+                href="https://www.searchenginejournal.com/create-content-earns-links-increases-traffic/289441/"
+              >
+                Search Engine Journal – How to Create Content That Earns Links &
+                Increases Your Traffic
+              </a>
+            </li>
+          </ol>
         </article>
       </div>
     </>

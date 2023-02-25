@@ -310,7 +310,7 @@ p {
 
 .about-me {
   width: 70%;
-  margin: 12rem auto;
+  margin: 300px auto 500px;
 }
 
 .about-me h2 {
@@ -322,7 +322,7 @@ p {
 
 .about-me-container {
   display: flex;
-
+  align-items: center;
   margin: auto;
   gap: 2rem;
 }
@@ -360,7 +360,7 @@ p {
 
 .projects-container {
   width: 70%;
-  margin: auto;
+  margin: 0 auto 500px;
 }
 
 .projects-container h2 {
@@ -374,7 +374,7 @@ p {
   margin: auto;
   gap: 4rem;
   position: relative;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .text-container {
@@ -531,7 +531,7 @@ p {
   justify-content: center;
   align-items: center;
   width: 50%;
-  margin: 8rem auto;
+  margin: 500px auto;
   text-align: center;
 }
 .contact-section p {
@@ -543,11 +543,11 @@ p {
 
 .articles-container {
   padding: 2rem;
-  margin: 8rem 0;
+  margin: 0 auto;
 }
 
 .articles-container h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 

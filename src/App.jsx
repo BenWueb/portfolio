@@ -1,5 +1,6 @@
 import Main from "./pages/Main";
 import NavbarMobile from "./components/NavbarMobile";
+import Services from "./pages/services";
 import Article from "./pages/Article";
 import CtaArticle from "./pages/CtaArticle";
 import NavArticle from "./pages/NavArticle";
@@ -15,6 +16,7 @@ function App() {
           <NavbarMobile />
           <Routes>
             <Route path="/" element={<Main />} />
+            <Route path="/services" element={<Services />} />
             <Route
               path="/guide-to-website-accessibility"
               element={<Article />}
