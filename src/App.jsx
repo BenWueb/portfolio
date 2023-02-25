@@ -1,6 +1,6 @@
 import Main from "./pages/Main";
 import NavbarMobile from "./components/NavbarMobile";
-import Services from "./pages/services";
+import Services from "./pages/Services";
 import Article from "./pages/Article";
 import CtaArticle from "./pages/CtaArticle";
 import NavArticle from "./pages/NavArticle";
