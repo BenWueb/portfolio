@@ -1,5 +1,6 @@
 import travel from "../assets/Travel screenshot.png";
 import kitchen from "../assets/Joans Kitchen Screenshot.png";
+import wedding from "../assets/wedding planner.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 function Projects() {
@@ -43,14 +44,15 @@ function Projects() {
             <div className="description-reverse">
               <h5>Social Recipe Application</h5>
               <p>
-                This was a personal project where I took all of my family
-                recipes from word docs, then processed and uploaded to a
-                database. <br />
-                <br />A fully functional recipe application. Add, edit, like,
-                favorite and comment on recipes. Complete with user
-                authentication and a profile page to track all your recipes and
-                activity on the platform. Uploaded images are converted to Webp
-                on the backend for optimization.
+                A fully functional recipe application. Add, edit, like, favorite
+                and comment on recipes. Complete with user authentication and a
+                profile page to track all your recipes and activity on the
+                platform.
+                <br />
+                <br />
+                Uploaded images are converted to Webp on the backend for
+                optimization. I used old family recipes from word docs, then
+                processed and uploaded to a database.
               </p>
             </div>
             <ul>
@@ -68,6 +70,32 @@ function Projects() {
           </div>
           <div className="project-image-reverse">
             <img src={kitchen} alt="" />
+          </div>
+        </div>
+        <div className="project">
+          <div className="text-container">
+            <div className="description">
+              <h5>Wedding Planner Website</h5>
+              <p>
+                A professional and elegant website built for a wedding planning
+                company.
+              </p>
+            </div>
+            <ul>
+              <li>React</li>
+              <li>Styled Components</li>
+              <li>Javascript</li>
+              <li>CSS</li>
+              <li>SEO</li>
+            </ul>
+            <div className="project-links">
+              <a href="https://wedding-planner-six.vercel.app/" target="_blank">
+                {<FaExternalLinkAlt className="icon" />}
+              </a>
+            </div>
+          </div>
+          <div className="project-image">
+            <img src={wedding} alt="" />
           </div>
         </div>
       </section>

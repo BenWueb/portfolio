@@ -149,6 +149,8 @@ p {
   display: flex;
   align-items: center;
   gap: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .menu li:hover {
@@ -315,6 +317,8 @@ p {
 
 .about-me h2 {
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .about-me p {
   font-size: var(--fs-1100);
@@ -365,6 +369,8 @@ p {
 
 .projects-container h2 {
   margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .project {
@@ -409,35 +415,17 @@ p {
   width: 800px;
   border-radius: 15px;
   overflow: hidden;
-
+  filter: brightness(30%);
   z-index: -1;
 }
 
-/* .project-image::before {
-  content: "";
-  background-color: rgba(3, 218, 197, 0.6);
-  height: 300px;
-  width: 600px;
-  position: absolute;
-  border-radius: 15px;
-  overflow: hidden;
-} */
+.project-image:hover {
+  filter: brightness(100%);
+}
 
 .project-image::before:hover {
   width: 1px;
 }
-
-/* .project-image::after {
-  content: "";
-  position: absolute;
-  height: 300px;
-  width: 600px;
-  background-color: var(--overlay-5);
-  top: -20px;
-  right: -20px;
-  z-index: -2;
-  border-radius: 15px;
-} */
 
 .project-image img {
   height: 100%;
@@ -452,7 +440,7 @@ p {
 
   gap: 4rem;
   position: relative;
-  margin-top: 8rem;
+  margin: 8rem 0;
 }
 
 .text-container-reverse {
@@ -493,32 +481,11 @@ p {
   z-index: -1;
 }
 
-/* .project-image-reverse::before {
-  content: "";
-  background-color: rgba(3, 218, 197, 0.6);
-  height: 300px;
-  width: 600px;
-  position: absolute;
-  border-radius: 15px;
-  overflow: hidden;
-} */
-
-/* .project-image-reverse::after {
-  content: "";
-  position: absolute;
-  height: 300px;
-  width: 600px;
-  background-color: var(--overlay-5);
-  top: -20px;
-  left: -20px;
-  z-index: -2;
-  border-radius: 15px;
-} */
-
 .project-image-reverse img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  filter: brightness(30%);
 }
 
 .project-links-reverse {
@@ -533,6 +500,11 @@ p {
   width: 50%;
   margin: 500px auto;
   text-align: center;
+}
+
+.contact-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 .contact-section p {
   margin: 4rem 0;
@@ -549,6 +521,8 @@ p {
 .articles-container h2 {
   margin-bottom: 4rem;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .article-card-container {
