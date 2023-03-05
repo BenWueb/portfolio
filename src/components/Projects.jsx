@@ -1,6 +1,6 @@
-import travel from "../assets/Travel screenshot.png";
-import kitchen from "../assets/Joans Kitchen Screenshot.png";
-import wedding from "../assets/wedding planner.png";
+import travel from "../assets/Travel screenshot.webp";
+import kitchen from "../assets/Joans Kitchen Screenshot.webp";
+import wedding from "../assets/wedding planner.webp";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 function Projects() {
