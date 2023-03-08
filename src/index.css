@@ -149,7 +149,8 @@ p {
   display: flex;
   align-items: center;
   gap: 2rem;
-  text-transform: uppercase;
+  font-size: var(--fs-1200);
+  font-weight: 600;
   letter-spacing: 3px;
 }
 
@@ -225,20 +226,6 @@ p {
   font-weight: 500;
   box-shadow: none;
 }
-
-/* .mobile-menu ul {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.mobile-resume {
-  background-color: transparent;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-  padding: 0.5rem 1.5rem;
-  font-size: var(--fs-10100);
-} */
 
 .main-container {
   display: flex;
@@ -317,7 +304,6 @@ p {
 
 .about-me h2 {
   margin-bottom: 1rem;
-  text-transform: uppercase;
   letter-spacing: 5px;
 }
 .about-me p {
@@ -360,136 +346,81 @@ p {
   object-fit: cover;
 }
 
-/**** Project Section *****/
+/**** Card ****/
 
 .projects-container {
-  width: 70%;
-  margin: 0 auto 500px;
+  margin: 0 auto 200px;
 }
 
-.projects-container h2 {
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+.projects-container > h2 {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.project {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: auto;
-  gap: 4rem;
-  position: relative;
-  margin-top: 4rem;
+.project-card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  justify-content: center;
 }
 
-.text-container {
-  position: absolute;
-  width: 50%;
-  left: 0;
-  top: 30%;
-}
-
-.text-container h5 {
-  margin-bottom: 1rem;
-}
-
-.text-container ul {
-  display: flex;
-  color: var(--secondary);
-  gap: 1rem;
-  margin-bottom: 1rem;
-  font-size: var(--fs-1200);
-}
-
-.description {
-  background-color: var(--overlay-7);
-  margin-bottom: 1rem;
-  border-radius: 15px;
-  padding: 1rem;
-  font-size: var(--fs-1000);
-}
-
-.project-image {
-  height: 400px;
-  width: 800px;
+.card {
+  background-color: var(--overlay-5);
   border-radius: 15px;
   overflow: hidden;
-  filter: brightness(30%);
-  z-index: -1;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
-.project-image:hover {
+.card:hover {
+  transform: translateY(-5px);
+  background-color: var(--overlay-7);
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 2/1;
+  filter: brightness(40%);
+  transition: filter 0.25s ease;
+}
+
+.card img:hover {
   filter: brightness(100%);
 }
 
-.project-image::before:hover {
-  width: 1px;
-}
-
-.project-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-reverse {
+.card-text {
+  padding: 20px;
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  gap: 4rem;
-  position: relative;
-  margin: 8rem 0;
+  flex-direction: column;
 }
 
-.text-container-reverse {
-  position: absolute;
-  width: 50%;
-  right: 0;
-  top: 18%;
-}
-
-.text-container-reverse h5 {
-  margin-bottom: 1rem;
-  text-align: right;
-}
-
-.text-container-reverse ul {
-  display: flex;
+.card-text h5 {
+  margin-bottom: 10px;
+  text-align: center;
   color: var(--secondary);
-  gap: 1rem;
-  justify-content: flex-end;
-  margin-bottom: 1rem;
-  font-size: var(--fs-1200);
 }
 
-.description-reverse {
-  background-color: var(--overlay-7);
-  margin-bottom: 1rem;
-  border-radius: 15px;
-  padding: 1rem;
-  text-align: right;
-  font-size: var(--fs-1000);
-}
-
-.project-image-reverse {
-  height: 400px;
-  width: 800px;
-  border-radius: 15px;
+.card-text > p {
   overflow: hidden;
-  z-index: -1;
+  margin-bottom: 20px;
+  height: 70px;
+  font-size: var(--fs-1100);
 }
 
-.project-image-reverse img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  filter: brightness(30%);
+.card-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 15px;
+  color: var(--secondary);
+  margin-top: auto;
 }
 
-.project-links-reverse {
-  text-align: end;
+.card-tools p {
+  font-size: var(--fs-1200);
 }
 
 .contact-section {
@@ -503,7 +434,6 @@ p {
 }
 
 .contact-section h2 {
-  text-transform: uppercase;
   letter-spacing: 5px;
 }
 .contact-section p {
@@ -521,7 +451,7 @@ p {
 .articles-container h2 {
   margin-bottom: 4rem;
   text-align: center;
-  text-transform: uppercase;
+
   letter-spacing: 5px;
 }
 
