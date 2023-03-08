@@ -1,7 +1,7 @@
 import travel from "../assets/Travel screenshot.webp";
 import kitchen from "../assets/Joans Kitchen Screenshot.webp";
 import wedding from "../assets/wedding planner.webp";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import lifeCoach from "../assets/life-coach.webp";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -11,6 +11,14 @@ function Projects() {
         <h2>Some Things I've Built</h2>
 
         <div className="project-card-container">
+          <ProjectCard
+            image={lifeCoach}
+            title="Personal Brand Website"
+            description="A stunning custom designed website for a personal brand/life coach"
+            tools={["React", "Javascript", "CSS", "SEO", "Styled Components"]}
+            siteLink="https://life-coach-ten.vercel.app/"
+          />
+
           <ProjectCard
             image={travel}
             title="Travel Company Website"
@@ -26,13 +34,20 @@ function Projects() {
             image={kitchen}
             title="Social Recipe Application"
             description="A fully functional recipe application. Add, edit, like, favorite
-          and comment on recipes. Complete with user authentication and a
+          and comment on recipes. Implemented Algolia for global search functionality. Complete with user authentication and a
           profile page to track all your recipes and activity on the
           platform.
           Uploaded images are converted to Webp on the backend for
           optimization. I used old family recipes from word docs, then
           processed and uploaded to a database."
-            tools={["React", "Firebase", "Javascript", "CSS", "Vercel"]}
+            tools={[
+              "React",
+              "Firebase",
+              "Javascript",
+              "Algolia",
+              "CSS",
+              "Vercel",
+            ]}
             siteLink="https://joans-kitchen.vercel.app/"
           />
 
