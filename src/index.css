@@ -22,7 +22,7 @@
   --background: #121212;
   --overlay-5: rgb(25, 25, 25);
   --overlay-7: rgb(35, 35, 35);
-  --overlay-9: rgba(255, 255, 255, 0.09);
+  --overlay-9: rgba(45, 45, 45);
   --overlay-12: rgba(255, 255, 255, 0.12);
   --overlay-16: rgba(255, 255, 255, 0.16);
   --bs: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -131,6 +131,10 @@ p {
 .link {
   text-decoration: none;
   color: white;
+}
+
+.heading {
+  font-size: 250px;
 }
 
 .nav-container {
@@ -281,14 +285,29 @@ p {
 }
 
 .tool-container {
-  background-color: var(--overlay-9);
+  background-color: var(--overlay-5);
   display: flex;
-
   align-items: center;
   height: 6rem;
   width: 18rem;
   border-radius: 10px;
   padding: 1rem;
+}
+
+.tools-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.tools-section-header {
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -2;
+  color: var(--overlay-9);
+  top: -30px;
+  left: 30px;
 }
 
 .tool-container p {
@@ -297,15 +316,25 @@ p {
   font-size: var(--fs-1000);
 }
 
+/**** About ****/
+
 .about-me {
   width: 70%;
   margin: 300px auto 500px;
+  position: relative;
 }
 
-.about-me h2 {
+.about-section-header {
   margin-bottom: 1rem;
   letter-spacing: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  color: var(--overlay-9);
+  top: -50px;
+  left: -200px;
 }
+
 .about-me p {
   font-size: var(--fs-1100);
 }
@@ -350,27 +379,40 @@ p {
 
 .projects-container {
   margin: 0 auto 200px;
+  position: relative;
 }
 
-.projects-container > h2 {
-  margin-bottom: 40px;
-  text-align: center;
+.projects-section-header {
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  color: var(--overlay-9);
+  top: -70px;
+  left: 200px;
 }
 
 .project-card-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
+  margin-bottom: 500px;
 }
 
 .card {
-  background-color: var(--overlay-5);
   border-radius: 15px;
-  overflow: hidden;
+  height: 1000px;
   width: 320px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 100%;
 }
 
 .card:hover {
@@ -382,7 +424,7 @@ p {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  aspect-ratio: 2/1;
+
   filter: brightness(40%);
   transition: filter 0.25s ease;
 }
@@ -393,9 +435,13 @@ p {
 
 .card-text {
   padding: 20px;
-  flex: 1;
+  z-index: 5;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  backdrop-filter: blur(2px) brightness(40%);
+  height: 250px;
+  top: 400px;
 }
 
 .card-text h5 {
@@ -423,36 +469,23 @@ p {
   font-size: var(--fs-1200);
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 500px auto;
-  text-align: center;
-}
-
-.contact-section h2 {
-  letter-spacing: 5px;
-}
-.contact-section p {
-  margin: 4rem 0;
-  font-size: var(--fs-1000);
-}
-
 /***** Article *****/
 
 .articles-container {
   padding: 2rem;
   margin: 0 auto;
+  position: relative;
 }
 
-.articles-container h2 {
-  margin-bottom: 4rem;
-  text-align: center;
-
+.articles-section-header {
+  margin-bottom: 1rem;
   letter-spacing: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  color: var(--overlay-9);
+  top: -50px;
+  left: 400px;
 }
 
 .article-card-container {
@@ -530,6 +563,35 @@ p {
   color: var(--secondary);
 }
 
+/**** Contact ****/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 500px auto 200px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-section-header {
+  margin-bottom: 1rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -1;
+  color: var(--overlay-9);
+  top: -60px;
+  line-height: 150px;
+}
+
+.contact-section p {
+  margin: 4rem 0;
+  font-size: var(--fs-1000);
+}
+
 @media screen and (max-width: 1660px) {
   .projects-container {
     width: 80%;
@@ -537,6 +599,30 @@ p {
 }
 
 @media screen and (max-width: 810px) {
+  .project-card-container {
+    margin-bottom: 200px;
+  }
+
+  .card {
+    border-radius: 15px;
+    height: 400px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-text {
+    padding: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    backdrop-filter: blur(2px) brightness(40%);
+    height: 250px;
+    top: 80px;
+  }
   .about-me h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -550,45 +636,74 @@ p {
     flex-direction: column;
   }
 
-  .projects-container h2 {
-    text-align: center;
-  }
-  .text-container,
-  .text-container-reverse {
-    position: relative;
-    width: 100%;
-  }
-
-  .text-container h5,
-  .text-container-reverse h5 {
-    text-align: center;
-  }
-
-  .text-container ul,
-  .text-container-reverse ul,
-  .project-links,
-  .project-links-reverse {
-    margin-bottom: 0.25rem;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .project,
-  .project-reverse {
-    gap: 2rem;
-    flex-direction: column-reverse;
-  }
-
-  .description-reverse p {
-    text-align: start;
-  }
-
   .contact-section {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 630px) {
+  /**** Headings ****/
+
+  .heading {
+    font-size: 100px;
+  }
+
+  .tools-section-header,
+  .about-section-header,
+  .projects-section-header,
+  .articles-section-header,
+  .contact-section-header {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    transform: translateY(10px);
+  }
+
+  .projects-section-header {
+    transform: translateY(10px);
+  }
+
+  .about-section-header {
+    transform: translateY(40px);
+  }
+
+  .articles-section-header {
+    transform: translateY(10px);
+  }
+
+  .contact-section-header {
+    transform: translateY(90px);
+  }
+
+  /**** Projects ****/
+
+  .project-card-container {
+    margin-bottom: 200px;
+  }
+
+  .card {
+    border-radius: 15px;
+    height: 400px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-text {
+    padding: 20px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    backdrop-filter: blur(2px) brightness(40%);
+    height: 250px;
+    top: 80px;
+  }
+
   .article-container h1 {
     line-height: 6rem;
   }
@@ -602,7 +717,7 @@ p {
     margin-bottom: 4rem;
   }
   h1 {
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 
   .cta-container {
@@ -635,7 +750,7 @@ p {
   }
 
   .about-me {
-    margin: 4rem 0;
+    margin: 200px 0 250px;
     width: 100%;
   }
 
@@ -646,56 +761,13 @@ p {
     margin: 8rem 0;
   }
 
-  .project,
-  .project-reverse {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin: auto;
-    gap: 1rem;
-    position: relative;
-    margin-top: 2rem;
-  }
-
-  .text-container,
-  .text-container-reverse {
-    position: relative;
-    width: 100%;
-    left: 0;
-  }
-
-  .text-container ul {
-    display: flex;
-    color: var(--secondary);
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: var(--fs-1200);
-  }
-
-  .description {
-    background-color: var(--overlay-7);
-    margin-bottom: 1rem;
-    border-radius: 15px;
-    padding: 1rem;
-    font-size: var(--fs-1200);
-  }
-
-  .project-image,
-  .project-image-reverse {
-    height: 175px;
-    width: 350px;
-    border-radius: 15px;
-    overflow: hidden;
-
-    z-index: -1;
-  }
-
   .contact-section p {
     margin: 2rem 0;
   }
 
   .contact-section {
     width: 100%;
+    margin: 200px 0;
   }
 
   .resume {
@@ -735,5 +807,37 @@ p {
 @media screen and (max-width: 420px) {
   .article-container h1 {
     line-height: 4rem;
+  }
+
+  .heading {
+    font-size: 50px;
+  }
+  .tools-section-header,
+  .about-section-header,
+  .projects-section-header,
+  .articles-section-header,
+  .contact-section-header {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    transform: translateY(20px);
+  }
+
+  .projects-section-header {
+    transform: translateY(20px);
+  }
+
+  .about-section-header {
+    transform: translateY(60px);
+  }
+
+  .articles-section-header {
+    transform: translateY(20px);
+  }
+
+  .contact-section-header {
+    transform: translateY(100px);
   }
 }

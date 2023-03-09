@@ -70,11 +70,11 @@ function Header() {
             </AnimatePresence>
           </motion.h1>
           <motion.p variants={listItem}>
-            Hello! I'm a full stack developer with 5+ years of experience. I'm
-            passionate about creating digital experiences that are both
-            beautiful and functional. Over the years, I've honed my skills in
-            React, Web Design, JavaScript, and various other frameworks to bring
-            my ideas to life.
+            Hello! I'm a full stack developer based out of Minneapolis,
+            Minnesota. I'm passionate about creating digital experiences that
+            are both beautiful and functional. Over the years, I've honed my
+            skills in React, Web Design, JavaScript, and various other
+            frameworks to bring my ideas to life.
           </motion.p>
           <Link to="/services">
             <motion.button variants={listItem} className="btn cta-btn">

@@ -1,14 +1,17 @@
-import travel from "../assets/Travel screenshot.webp";
-import kitchen from "../assets/Joans Kitchen Screenshot.webp";
-import wedding from "../assets/wedding planner.webp";
-import lifeCoach from "../assets/life-coach.webp";
+import travel from "../assets/travel-full-site.png";
+import kitchen from "../assets/joans-kitchen-full-site.png";
+import wedding from "../assets/wedding-planner-full-site.png";
+import lifeCoach from "../assets/life-coach-full-site.jpg";
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
     <>
-      <section className="projects-container" id="projects">
-        <h2>Some Things I've Built</h2>
+      <section className="projects-container">
+        <h2 className="heading projects-section-header">
+          Projects
+          <div className="overlay"></div>
+        </h2>
 
         <div className="project-card-container">
           <ProjectCard

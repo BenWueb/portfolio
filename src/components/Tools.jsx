@@ -12,6 +12,7 @@ import graphql from "../assets/graphql-logo-2.svg";
 import wordpress from "../assets/wordpress-blue.svg";
 import seo from "../assets/google-custom-search.svg";
 import python from "../assets/python-5.svg";
+import figma from "../assets/figma.svg";
 
 function Tools() {
   const toolsContainer = {
@@ -33,6 +34,7 @@ function Tools() {
   return (
     <>
       <section className="tools-container">
+        <h2 className="heading tools-section-header">Skills</h2>
         <motion.div
           variants={toolsContainer}
           initial="hidden"
@@ -90,6 +92,10 @@ function Tools() {
           <motion.div variants={listItem} className="tool-container">
             <img src={python} alt="" />
             <p>Python</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={figma} alt="" />
+            <p>Figma</p>
           </motion.div>
         </motion.div>
       </section>

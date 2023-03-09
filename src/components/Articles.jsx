@@ -4,7 +4,7 @@ function Articles() {
   return (
     <div>
       <section className="articles-container" id="articles">
-        <h2>Articles</h2>
+        <h2 className="heading articles-section-header">Articles</h2>
         <div className="article-card-container">
           <Link className="link" to="/guide-to-website-accessibility">
             <div className="article-card">

@@ -5,9 +5,6 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
   return (
     <>
       <div className="card">
-        <div className="cardImage">
-          <img src={image} alt="" />
-        </div>
         <div className="card-text">
           <h5>{title}</h5>
           <p>{description}...</p>
@@ -25,6 +22,9 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
               <FaExternalLinkAlt className="icon" />
             </Link>
           )}
+        </div>
+        <div className="card-image">
+          <img src={image} alt="" />
         </div>
       </div>
     </>
