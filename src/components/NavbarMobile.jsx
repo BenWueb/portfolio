@@ -101,24 +101,40 @@ function NavbarMobile() {
                   <motion.li
                     variants={mobileListItem}
                     className="mobile-menu-item"
+                    onClick={() => {
+                      window.location.replace("/#projects");
+                      setMenuVisible(false);
+                    }}
                   >
                     Projects
                   </motion.li>
                   <motion.li
                     variants={mobileListItem}
                     className="mobile-menu-item"
+                    onClick={() => {
+                      window.location.replace("/#articles");
+                      setMenuVisible(false);
+                    }}
                   >
                     Articles
                   </motion.li>
                   <motion.li
                     variants={mobileListItem}
                     className="mobile-menu-item"
+                    onClick={() => {
+                      window.location.replace("/#contact");
+                      setMenuVisible(false);
+                    }}
                   >
                     Contact
                   </motion.li>
                   <motion.li
                     variants={mobileListItem}
                     className="mobile-menu-item"
+                    onClick={() => {
+                      window.location.replace("/#about");
+                      setMenuVisible(false);
+                    }}
                   >
                     About
                   </motion.li>

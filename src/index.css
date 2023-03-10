@@ -403,12 +403,15 @@ p {
 
 .card {
   border-radius: 15px;
-  height: 1000px;
+  height: 450px;
   width: 320px;
   display: flex;
   flex-direction: column;
-  position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: height 0.25s ease;
+  z-index: 2;
 }
 
 .card-image {
@@ -418,55 +421,66 @@ p {
 .card:hover {
   transform: translateY(-5px);
   background-color: var(--overlay-7);
-}
-
-.card img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-
-  filter: brightness(40%);
-  transition: filter 0.25s ease;
-}
-
-.card img:hover {
-  filter: brightness(100%);
+  height: 80vh;
+  width: 400px;
+  z-index: 4;
 }
 
 .card-text {
   padding: 20px;
-  z-index: 5;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  backdrop-filter: blur(2px) brightness(40%);
-  height: 250px;
-  top: 400px;
+  backdrop-filter: blur(2px) brightness(20%);
+  height: 290px;
+  margin: auto 0;
 }
 
 .card-text h5 {
-  margin-bottom: 10px;
   text-align: center;
   color: var(--secondary);
 }
 
 .card-text > p {
   overflow: hidden;
-  margin-bottom: 20px;
   height: 70px;
   font-size: var(--fs-1100);
+  margin: auto 0;
+}
+
+.card-btn {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .card-tools {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 0 15px;
   color: var(--secondary);
-  margin-top: auto;
 }
 
 .card-tools p {
   font-size: var(--fs-1200);
+}
+
+.card-links {
+  display: flex;
+  justify-content: center;
+}
+
+.card-icon {
+  color: var(--primary);
 }
 
 /***** Article *****/
@@ -618,10 +632,7 @@ p {
     z-index: 5;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    backdrop-filter: blur(2px) brightness(40%);
-    height: 250px;
-    top: 80px;
+    backdrop-filter: blur(2px) brightness(20%);
   }
   .about-me h2 {
     text-align: center;
@@ -683,27 +694,9 @@ p {
     margin-bottom: 200px;
   }
 
-  .card {
-    border-radius: 15px;
-    height: 400px;
-    width: 320px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
+  .card-text p {
+    text-align: center;
   }
-
-  .card-text {
-    padding: 20px;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    backdrop-filter: blur(2px) brightness(40%);
-    height: 250px;
-    top: 80px;
-  }
-
   .article-container h1 {
     line-height: 6rem;
   }

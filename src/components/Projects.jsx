@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   return (
     <>
-      <section className="projects-container">
+      <section className="projects-container" id="projects">
         <h2 className="heading projects-section-header">
           Projects
           <div className="overlay"></div>
@@ -17,7 +17,7 @@ function Projects() {
           <ProjectCard
             image={lifeCoach}
             title="Personal Brand Website"
-            description="A stunning custom designed website for a personal brand/life coach"
+            description="A custom designed website for a personal brand/life coach"
             tools={["React", "Javascript", "CSS", "SEO", "Styled Components"]}
             siteLink="https://life-coach-ten.vercel.app/"
           />
@@ -25,10 +25,7 @@ function Projects() {
           <ProjectCard
             image={travel}
             title="Travel Company Website"
-            description="A simple and elegant website built for a travel company using
-                React, CSS, Javascript. Includes animations and a functional
-                contact form linked to an email service. Deployed and hosted on
-                AWS."
+            description="A minimal website built for a travel company."
             tools={["React", "AWS", "Javascript", "CSS", "SEO"]}
             siteLink="https://main.d2key1rylg1wz4.amplifyapp.com/"
           />
@@ -36,13 +33,8 @@ function Projects() {
           <ProjectCard
             image={kitchen}
             title="Social Recipe Application"
-            description="A fully functional recipe application. Add, edit, like, favorite
-          and comment on recipes. Implemented Algolia for global search functionality. Complete with user authentication and a
-          profile page to track all your recipes and activity on the
-          platform.
-          Uploaded images are converted to Webp on the backend for
-          optimization. I used old family recipes from word docs, then
-          processed and uploaded to a database."
+            description="A fully functional social recipe application. Add, edit, like, favorite
+          and comment on recipes."
             tools={[
               "React",
               "Firebase",

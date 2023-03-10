@@ -4,27 +4,27 @@ import { Link } from "react-router-dom";
 function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
   return (
     <>
-      <div className="card">
+      <div className="card" style={{ backgroundImage: `url(${image})` }}>
         <div className="card-text">
           <h5>{title}</h5>
-          <p>{description}...</p>
           <div className="card-tools">
             {tools.map((tool) => (
               <p>{tool}</p>
             ))}
           </div>
-          <a href={siteLink} target="_blank">
-            <FaExternalLinkAlt className="icon" />
-          </a>
+          <p>{description}</p>
+          <button className="card-btn">Read more</button>
+          <div className="card-links">
+            <a href={siteLink} target="_blank">
+              <FaExternalLinkAlt className="icon card-icon" />
+            </a>
 
-          {gitLink && (
-            <Link to={gitLink}>
-              <FaExternalLinkAlt className="icon" />
-            </Link>
-          )}
-        </div>
-        <div className="card-image">
-          <img src={image} alt="" />
+            {gitLink && (
+              <Link to={gitLink}>
+                <FaExternalLinkAlt className="icon" />
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </>
