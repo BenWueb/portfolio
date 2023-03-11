@@ -1,4 +1,4 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
@@ -20,9 +20,9 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
             </a>
 
             {gitLink && (
-              <Link to={gitLink}>
-                <FaExternalLinkAlt className="icon" />
-              </Link>
+              <a href={gitLink} target="_blank">
+                <FaGithub className="icon card-icon" />
+              </a>
             )}
           </div>
         </div>
