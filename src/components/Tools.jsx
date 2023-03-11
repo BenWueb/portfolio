@@ -13,6 +13,8 @@ import wordpress from "../assets/wordpress-blue.svg";
 import seo from "../assets/google-custom-search.svg";
 import python from "../assets/python-5.svg";
 import figma from "../assets/figma.svg";
+import jwt from "../assets/jwt-3.svg";
+import redux from "../assets/redux-logo-svgrepo-com.svg";
 
 function Tools() {
   const toolsContainer = {
@@ -92,6 +94,14 @@ function Tools() {
           <motion.div variants={listItem} className="tool-container">
             <img src={python} alt="" />
             <p>Python</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={redux} alt="" />
+            <p>Redux</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={jwt} alt="" />
+            <p>JWT</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={figma} alt="" />

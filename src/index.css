@@ -432,7 +432,7 @@ p {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(2px) brightness(20%);
+  backdrop-filter: blur(2px) brightness(10%);
   height: 290px;
   margin: auto 0;
 }
@@ -479,7 +479,6 @@ p {
   display: flex;
   justify-content: center;
   gap: 10px;
-  color: var(--primary);
 }
 
 .card-icon {
