@@ -85,6 +85,9 @@ button:hover {
 button:focus {
   outline: none;
 }
+a {
+  color: var(--primary);
+}
 
 .icon {
   color: var(--secondary);
@@ -390,7 +393,7 @@ p {
   z-index: -1;
   color: var(--overlay-9);
   top: -70px;
-  left: 200px;
+  left: -180px;
 }
 
 .project-card-container {
@@ -499,7 +502,7 @@ p {
   z-index: -1;
   color: var(--overlay-9);
   top: -50px;
-  left: 400px;
+  left: 20px;
 }
 
 .article-card-container {

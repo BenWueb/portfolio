@@ -15,6 +15,23 @@ function Projects() {
 
         <div className="project-card-container">
           <ProjectCard
+            image={kitchen}
+            title="Social Recipe Application"
+            description="A fully functional social recipe application. Add, edit, like, favorite
+                    and comment on recipes."
+            tools={[
+              "React",
+              "Firebase",
+              "Javascript",
+              "OAuth",
+              "Algolia",
+              "CSS",
+              "Vercel",
+            ]}
+            siteLink="https://joans-kitchen.vercel.app/"
+          />
+
+          <ProjectCard
             image={lifeCoach}
             title="Personal Brand Website"
             description="A custom designed website for a personal brand/life coach"
@@ -28,22 +45,6 @@ function Projects() {
             description="A minimal website built for a travel company."
             tools={["React", "AWS", "Javascript", "CSS", "SEO"]}
             siteLink="https://main.d2key1rylg1wz4.amplifyapp.com/"
-          />
-
-          <ProjectCard
-            image={kitchen}
-            title="Social Recipe Application"
-            description="A fully functional social recipe application. Add, edit, like, favorite
-          and comment on recipes."
-            tools={[
-              "React",
-              "Firebase",
-              "Javascript",
-              "Algolia",
-              "CSS",
-              "Vercel",
-            ]}
-            siteLink="https://joans-kitchen.vercel.app/"
           />
 
           <ProjectCard

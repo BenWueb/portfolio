@@ -76,11 +76,12 @@ function Header() {
             skills in React, Web Design, JavaScript, and various other
             frameworks to bring my ideas to life.
           </motion.p>
-          <Link to="/services">
+
+          <a href="mailto:ben.wuebker@gmail.com">
             <motion.button variants={listItem} className="btn cta-btn">
-              View Services
+              Contact Me
             </motion.button>
-          </Link>
+          </a>
         </motion.div>
       </section>
     </>
