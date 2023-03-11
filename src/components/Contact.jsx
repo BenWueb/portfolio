@@ -9,7 +9,7 @@ function Contact() {
           touch. I'm always happy to connect with fellow developers and
           potential clients!
         </p>
-        <a href="mailto:ben.wuebker@gmail.com">
+        <a href="mailto:benjamin@strategicsolutionslabs.com">
           <button className="btn contact-resume">Contact</button>
         </a>
       </section>
