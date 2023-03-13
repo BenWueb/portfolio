@@ -133,6 +133,10 @@ p {
   color: white;
 }
 
+.project-link {
+  color: var(--primary);
+}
+
 .heading {
   font-size: 250px;
 }
@@ -552,6 +556,11 @@ p {
 
 .article-container h2 {
   color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.article-container h3 {
+  color: var(--secondary);
   margin-bottom: 2rem;
 }
 

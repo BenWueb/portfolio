@@ -13,11 +13,21 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
             ))}
           </div>
           <p>{description}</p>
-          <button className="card-btn">Read more</button>
+
+          <button className="card-btn">
+            <Link
+              className="project-link"
+              to={`/article/${title.toLowerCase().replaceAll(" ", "_")}`}
+            >
+              Read more{" "}
+            </Link>
+          </button>
           <div className="card-links">
-            <a href={siteLink} target="_blank">
-              <FaExternalLinkAlt className="icon card-icon" />
-            </a>
+            {siteLink && (
+              <a href={siteLink} target="_blank">
+                <FaExternalLinkAlt className="icon card-icon" />
+              </a>
+            )}
 
             {gitLink && (
               <a href={gitLink} target="_blank">

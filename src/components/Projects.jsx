@@ -57,7 +57,7 @@ function Projects() {
               "Anchor Framework",
               "Phantom wallet",
             ]}
-            siteLink=""
+            gitLink="https://github.com/BenWueb/gif-portal-starter"
           />
 
           <ProjectCard
