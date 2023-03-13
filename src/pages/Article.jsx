@@ -7,10 +7,9 @@ function ArticleTest({ article }) {
 
   const params = useParams();
   const articlePath = params.postName.replaceAll("_", "");
-  console.log(articlePath);
 
   useEffect(() => {
-    fetch(`/src/posts/${articlePath}.md`)
+    fetch(`/posts/${articlePath}.md`)
       .then((res) => res.text())
       .then((text) => setPost(text));
   }, []);
