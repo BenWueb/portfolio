@@ -12,8 +12,8 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   return (
     <>
-      <section className="projects-container" id="projects">
-        <h2 className="heading projects-section-header">
+      <section className="projects-container">
+        <h2 id="projects" className="heading projects-section-header">
           Projects
           <div className="overlay"></div>
         </h2>
