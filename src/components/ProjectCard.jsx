@@ -17,7 +17,7 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
           <button className="card-btn">
             <Link
               className="project-link"
-              to={`/article/${title.toLowerCase().replaceAll(" ", "_")}`}
+              to={`/article/social_recipe_application`}
             >
               Read more{" "}
             </Link>
@@ -40,4 +40,6 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
     </>
   );
 }
+// Replace button link once articles exist for all projects
+// to={`/article/${title.toLowerCase().replaceAll(" ", "_")}`}
 export default ProjectCard;
