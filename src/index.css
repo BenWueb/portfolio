@@ -547,6 +547,17 @@ p {
   margin: auto;
 }
 
+.article-container p:nth-child(1) {
+  grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
+}
+
+.article-container img {
+  height: 325px;
+  width: auto;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+
 .article-container h1 {
   text-align: center;
   margin: 4rem 0;

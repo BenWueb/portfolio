@@ -8,6 +8,26 @@ A fully functional React application where you can add, edit, delete, like, comm
 
 This application was built using React.js and Google Firebase. The initial dataset was a trove of old recipes passed down from my grandma that lived on a ancient piece of recipe software. They were extracted and converted into .pdf and .doc files a few years back by a relative.
 
+## Screenshots
+
+### Desktop
+
+![recipe-laptop](/posts/images/recipe-1-laptop.png)
+![recipe-laptop](/posts/images/recipe-2-laptop.png)
+![recipe-laptop](/posts/images/search-page-laptop.png)
+![recipe-laptop](/posts/images/profile-laptop.png)
+![recipe-laptop](/posts/images/categories-laptop.png)
+![recipe-laptop](/posts/images/add-recipe-laptop.png)
+
+### Mobile
+
+![recipe-laptop](/posts/images/recipe-1-mobile.png)
+![recipe-laptop](/posts/images/recipe-2-mobile.png)
+![recipe-laptop](/posts/images/search-mobile.png)
+![recipe-laptop](/posts/images/profile-1-mobile.png)
+![recipe-laptop](/posts/images/profile-2-mobile.png)
+![recipe-laptop](/posts/images/categories-mobile.png)
+
 ## Initial Dataset
 
 By far, the most challenging part of this project was parsing the data to display it correctly and consistently. Because of its age and origin it was full of inconsitent spacing, formatting and random text artifacts. This made it nearly impossible to extract the data from the PDF and word documents. Once extracted to the best of my ability I uploaded it to Google Firebase using the Firebase CLI. I then had to create some interesting regex to parse the data into seperate steps and ingredients as the source was all basically paragraphs of text. I used the same process to fetch recipes from the database using params. There were so many edge cases here, which made this one of the most difficult and time consuming aspects of the project.
@@ -22,7 +42,7 @@ I didn't use any third party state management for this project. It was all done 
 
 ## Hurdles
 
-Some of the biggest pain points for me were having to deal with all of the "x is null' errors that arise when you are trying to render props before the state has loaded. Usually this can be solved by adding a conditional return, however you cannot use a conditional return before a useEffect, so if your useEffect is using say auth.currentUser, but it runs before the server returns the current user data it will throw an error. React has a experimental hook useStatus that hopefully will be available soon in production that is supposed to solve this.
+Some of the biggest pain points for me were having to deal with all of the "x is null' errors that arise when you are trying to render props before the state has loaded. Usually this can be solved by adding a conditional return, however you cannot use a conditional return before a useEffect, so if your useEffect is using say auth.currentUser, but it runs before the server returns the current user data it will throw an error.
 
 For example the below will throw the above referenced error.
 
@@ -62,20 +82,20 @@ if (!currentUserData) {
 useEffect(() => {...
 ```
 
+##
+
 ## Images
 
 Obviously images are important for a food app and ideally you would have at least one for each recipe, which is a lot of photos. Given the initial data set there aren't many photos for individual recipes, so most have a stock image. Unfortunate, but not much to be done there. I used a cloud function to resize and convert the images to webp server side. Implemented lazy loading and pagination as well.
 
 ## Security
 
-Security is always a concern, especially when you have user inputs that render to the dom. Here I used regex and a packaged called
-
-There are protected routes for the profile and edit pages and auth checks
-
-Aside from that having well written rules in Firestore is a good way to make sure your data stays secure.
+Security is always a concern, especially when you have user inputs that render to the dom. There are protected routes for the profile and edit pages as well as a listener on the auth status. Aside from that having well written rules in Firestore is a good way to make sure your data stays secure.
 
 ## Optimization
 
+The above mentioned in the images section as well as using specific queries for recipes and indexing via Algolia.
+
 ## SEO
 
-I used React Helmet to include a header on each page for SEO. Uploaded a sitemap to Google Source Console
+I used React Helmet to include a header on each page for SEO. Uploaded a sitemap to Google Source Console and included all meta tags and relevant HTML tags.
