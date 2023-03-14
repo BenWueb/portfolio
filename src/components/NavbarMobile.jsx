@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BiMenuAltRight } from "react-icons/bi";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
+import resume from "../assets/Web Dev Resume.pdf";
 
 function NavbarMobile() {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -138,12 +139,14 @@ function NavbarMobile() {
                   >
                     About
                   </motion.li>
-                  <motion.button
-                    variants={mobileListItem}
-                    className="mobile-resume btn"
-                  >
-                    Resume
-                  </motion.button>
+                  <a href={resume} target="_blank">
+                    <motion.button
+                      variants={mobileListItem}
+                      className="mobile-resume btn"
+                    >
+                      Resume
+                    </motion.button>
+                  </a>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -184,9 +187,11 @@ function NavbarMobile() {
               >
                 About
               </motion.li>
-              <motion.button variants={listItem} className="resume btn">
-                Resume
-              </motion.button>
+              <a href={resume} target="_blank">
+                <motion.button variants={listItem} className="resume btn">
+                  Resume
+                </motion.button>
+              </a>
             </motion.ul>
           </div>
         )}
