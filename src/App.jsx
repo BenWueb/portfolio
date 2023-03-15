@@ -20,26 +20,6 @@ function App() {
             <Route path="/project/:projectId" element={<Project />} />
             <Route path="/services" element={<Services />} />
             <Route path="/article/:postName" element={<Article />} />
-            <Route
-              path="/guide-to-website-accessibility"
-              element={<Article />}
-            />
-            <Route
-              path="/creating-effective-cta-buttons"
-              element={<CtaArticle />}
-            />
-            <Route
-              path="/Designing-a-Website-Navigation-Menu"
-              element={<NavArticle />}
-            />
-            <Route
-              path="/creating-an-effective-landing-page"
-              element={<LandingArticle />}
-            />
-            <Route
-              path="/content-optimization-for-search-engine-optimization"
-              element={<SeoArticle />}
-            />
           </Routes>
         </Router>
       </div>
