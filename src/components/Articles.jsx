@@ -46,7 +46,7 @@ function Articles() {
             become an essential factor in the success of any website."
           />
           <ArticleCard
-            title="Testing & Debugging Best Practices"
+            title="Testing and Debugging Best Practices"
             desc="Building a website can be an exciting experience, but it is
             equally important to test and debug it before launching it.
             Testing and debugging are critical parts of the website
