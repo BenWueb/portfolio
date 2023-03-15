@@ -5,6 +5,7 @@
   content="A helpful guide to optimizing your website content for search engine optimization"
   />
 </head>
+
 # Guide to Website Accessibility
 
 Website accessibility is a critical aspect of web development that
