@@ -77,9 +77,9 @@ function Header() {
             frameworks to bring my ideas to life.
           </motion.p>
 
-          <a href="mailto:ben.wuebker@gmail.com">
+          <a href="mailto:benjamin@strategicsolutionslabs.com">
             <motion.button variants={listItem} className="btn cta-btn">
-              Contact Me
+              Free Consultation
             </motion.button>
           </a>
         </motion.div>
