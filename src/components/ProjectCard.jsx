@@ -6,7 +6,7 @@ function ProjectCard({ image, title, description, tools, siteLink, gitLink }) {
     <>
       <div className="card" style={{ backgroundImage: `url(${image})` }}>
         <div className="card-text">
-          <h5>{title}</h5>
+          <h4>{title}</h4>
           <div className="card-tools">
             {tools.map((tool) => (
               <p>{tool}</p>

@@ -38,12 +38,21 @@ function Projects() {
           />
 
           <ProjectCard
-            image={lifeCoach}
-            title="Personal Brand Website"
-            description="A custom designed website for a personal brand/life coach"
-            tools={["React", "Javascript", "CSS", "SEO", "Styled Components"]}
-            siteLink="https://life-coach-ten.vercel.app/"
-            gitLink="https://github.com/BenWueb/life-coach"
+            image={ticket}
+            title="Support Ticket App"
+            description="A support ticket application built using the MERN stack"
+            tools={[
+              "React",
+              "Javascript",
+              "Redux",
+              "MongoDB",
+              "Express",
+              "Axios",
+              "JWT",
+              "Bcrypt",
+            ]}
+            siteLink="https://support-ticket-app.herokuapp.com/"
+            gitLink="https://github.com/BenWueb/support-desk-app"
           />
 
           <ProjectCard
@@ -61,26 +70,8 @@ function Projects() {
           />
 
           <ProjectCard
-            image={ticket}
-            title="Support Ticket App"
-            description="A support ticket application built using the MERN stack"
-            tools={[
-              "React",
-              "Javascript",
-              "Redux",
-              "MongoDB",
-              "Express",
-              "Axios",
-              "JWT",
-              "Bcrypt",
-            ]}
-            siteLink=""
-            gitLink="https://github.com/BenWueb/support-desk-app"
-          />
-
-          <ProjectCard
             image={lukewarm}
-            title="Ecommerce Site for a Vintage Brand"
+            title="Ecommerce Application"
             description="An Ecommerce platform built for a local vintage brand. Includes an admin panel to access CMS and edit content"
             tools={[
               "React",

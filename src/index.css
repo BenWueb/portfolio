@@ -407,11 +407,11 @@ p {
 
 .card {
   border-radius: 15px;
-  height: 450px;
+  height: 400px;
   width: 320px;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -437,20 +437,23 @@ p {
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(2px) brightness(10%);
-  height: 290px;
+  height: 450px;
+  overflow: hidden;
   margin: auto 0;
+  border-radius: 13px;
 }
 
-.card-text h5 {
+.card-text h4 {
   text-align: center;
   color: var(--secondary);
+  margin-bottom: 10px;
 }
 
 .card-text > p {
   overflow: hidden;
   height: 70px;
   font-size: var(--fs-1100);
-  margin: auto 0;
+  margin-top: auto;
 }
 
 .card-btn {
@@ -460,7 +463,8 @@ p {
   font-family: inherit;
   border-radius: 5px;
   padding: 4px;
-  margin: 10px;
+  margin-top: auto;
+  margin-bottom: 10px;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 2px;
