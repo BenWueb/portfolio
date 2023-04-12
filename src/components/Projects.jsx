@@ -56,6 +56,15 @@ function Projects() {
           />
 
           <ProjectCard
+            image={lifeCoach}
+            title="Personal Brand Website"
+            description="A custom designed website for a personal brand/life coach"
+            tools={["React", "Javascript", "CSS", "SEO", "Styled Components"]}
+            siteLink="https://life-coach-ten.vercel.app/"
+            gitLink="https://github.com/BenWueb/life-coach"
+          />
+
+          <ProjectCard
             image={gifPortal}
             title="GIF Portal on Solana"
             description="A GIF uploader built on the Solana blockchain using Anchor framework"
