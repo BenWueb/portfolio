@@ -72,14 +72,12 @@ function Header() {
           <motion.p variants={listItem}>
             Hello! I'm a full stack developer based out of Minneapolis,
             Minnesota. I'm passionate about creating digital experiences that
-            are both beautiful and functional. Over the years, I've honed my
-            skills in React, Web Design, JavaScript, and various other
-            frameworks to bring my ideas to life.
+            are both beautiful and functional.
           </motion.p>
 
           <a href="mailto:benjamin@strategicsolutionslabs.com">
             <motion.button variants={listItem} className="btn cta-btn">
-              Free Consultation
+              Contact Me
             </motion.button>
           </a>
         </motion.div>

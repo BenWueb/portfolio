@@ -49,14 +49,11 @@ function Articles() {
             title="Testing and Debugging Best Practices"
             desc="Building a website can be an exciting experience, but it is
             equally important to test and debug it before launching it.
-            Testing and debugging are critical parts of the website
-            development process as they help identify issues and ensure the
-            site is functional, user-friendly, and secure."
+            "
           />
           <ArticleCard
             title="Optimizing Websites for Mobile"
-            desc=" In today's digital age, more people are accessing the internet
-            through mobile devices than ever before. As a result, it's
+            desc=" It's
             crucial for businesses to optimize their websites for mobile
             devices to provide users with a seamless experience, whether
             they're browsing on a smartphone, tablet, or other mobile
