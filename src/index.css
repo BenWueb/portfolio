@@ -346,8 +346,8 @@ p {
 .about-me-container {
   display: flex;
   align-items: center;
-  margin: auto;
   gap: 2rem;
+  width: 100%;
 }
 
 .about-text-container {
@@ -411,12 +411,9 @@ p {
   width: 320px;
   display: flex;
   flex-direction: column;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  transition: height 0.25s ease;
-  z-index: 2;
 }
 
 .card-image {
@@ -424,11 +421,6 @@ p {
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  background-color: var(--overlay-7);
-  height: 80vh;
-  width: 400px;
-  z-index: 4;
 }
 
 .card-text {
@@ -441,6 +433,11 @@ p {
   overflow: hidden;
   margin: auto 0;
   border-radius: 13px;
+}
+
+.card-text-show {
+  height: 450px;
+  padding: 20px;
 }
 
 .card-text h4 {
