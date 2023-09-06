@@ -36,7 +36,8 @@ function Tools() {
   return (
     <>
       <section className="tools-container">
-        <h2 className="heading tools-section-header">Skills</h2>
+        <h2 className="heading ">Skills</h2>
+        <h3 className="tools-subheading">Advanced</h3>
         <motion.div
           variants={toolsContainer}
           initial="hidden"
@@ -52,10 +53,6 @@ function Tools() {
             <p>Javascript</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
-            <img src={aws} alt="" />
-            <p>Amazon Web Services</p>
-          </motion.div>
-          <motion.div variants={listItem} className="tool-container">
             <img src={css} alt="" />
             <p>CSS</p>
           </motion.div>
@@ -63,6 +60,14 @@ function Tools() {
             <img src={firebase} alt="" />
             <p>Google Firebase</p>
           </motion.div>
+        </motion.div>
+        <h3 className="tools-subheading">Experienced</h3>
+        <motion.div
+          variants={toolsContainer}
+          initial="hidden"
+          whileInView="show"
+          className="tools"
+        >
           <motion.div variants={listItem} className="tool-container">
             <img src={mongodb} alt="" />
             <p>MongoDB</p>
@@ -75,14 +80,7 @@ function Tools() {
             <img src={tailwind} alt="" />
             <p>TailwindCSS</p>
           </motion.div>
-          <motion.div variants={listItem} className="tool-container">
-            <img src={mysql} alt="" />
-            <p>MySQL</p>
-          </motion.div>
-          <motion.div variants={listItem} className="tool-container">
-            <img src={graphql} alt="" />
-            <p>GraphQL</p>
-          </motion.div>
+
           <motion.div variants={listItem} className="tool-container">
             <img src={wordpress} alt="" />
             <p>Wordpress</p>
@@ -94,10 +92,6 @@ function Tools() {
           <motion.div variants={listItem} className="tool-container">
             <img src={python} alt="" />
             <p>Python</p>
-          </motion.div>
-          <motion.div variants={listItem} className="tool-container">
-            <img src={redux} alt="" />
-            <p>Redux</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={jwt} alt="" />

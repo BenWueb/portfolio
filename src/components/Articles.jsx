@@ -5,7 +5,7 @@ function Articles() {
   return (
     <div>
       <section className="articles-container" id="articles">
-        <h2 className="heading articles-section-header">Articles</h2>
+        <h2 className="heading ">Articles</h2>
         <div className="article-card-container">
           <ArticleCard
             title="A Guide to Website Accessibility"

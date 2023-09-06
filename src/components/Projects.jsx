@@ -1,5 +1,5 @@
 import travel from "../assets/travel-full-site.png";
-import kitchen from "../assets/joans-kitchen-full-site.png";
+import kitchen from "../assets/joans-kitchen-profile.png";
 import wedding from "../assets/wedding-planner-full-site.png";
 import lifeCoach from "../assets/life-coach-full-site.jpg";
 import devBlog from "../assets/Dev-Blog-fullsite.png";
@@ -8,35 +8,35 @@ import gifPortal from "../assets/My-GIF-Portal-fullsite.png";
 import ticket from "../assets/React-Redux-App-fullsite.png";
 import lukewarm from "../assets/Lukewarm-fullsite.png";
 import ProjectCard from "./ProjectCard";
+import HighlightCard from "./HighlightCard";
 
 function Projects() {
   return (
     <>
       <section className="projects-container">
-        <h2 id="projects" className="heading projects-section-header">
+        <h2 id="projects" className="heading ">
           Projects
           <div className="overlay"></div>
         </h2>
+        <HighlightCard
+          image={kitchen}
+          title="Social Recipe Application"
+          description="A fully functional React application where you can add, edit, delete, like, comment and share recipes. Email authentication and OAuth for account creation and keep track of your favorite recipes. Optimized for all devices and viewports."
+          tools={[
+            "React",
+            "Firebase",
+            "Javascript",
+            "OAuth",
+            "Algolia",
+            "CSS",
+            "Vercel",
+          ]}
+          siteLink="https://joans-kitchen.vercel.app/"
+          gitLink="https://github.com/BenWueb/Joans-Kitchen"
+          link="/articles/article/social_recipe_application`"
+        />
 
         <div className="project-card-container">
-          <ProjectCard
-            image={kitchen}
-            title="Social Recipe Application"
-            description="A fully functional social recipe application. Add, edit, like, favorite
-                    and comment on recipes."
-            tools={[
-              "React",
-              "Firebase",
-              "Javascript",
-              "OAuth",
-              "Algolia",
-              "CSS",
-              "Vercel",
-            ]}
-            siteLink="https://joans-kitchen.vercel.app/"
-            gitLink="https://github.com/BenWueb/Joans-Kitchen"
-          />
-
           <ProjectCard
             image={ticket}
             title="Support Ticket App"
