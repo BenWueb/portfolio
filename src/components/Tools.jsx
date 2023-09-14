@@ -15,6 +15,7 @@ import python from "../assets/python-5.svg";
 import figma from "../assets/figma.svg";
 import jwt from "../assets/jwt-3.svg";
 import redux from "../assets/redux-logo-svgrepo-com.svg";
+import next from "../assets/nextjs.svg";
 
 function Tools() {
   const toolsContainer = {
@@ -47,6 +48,10 @@ function Tools() {
           <motion.div variants={listItem} className="tool-container">
             <img src={react} alt="" />
             <p>React</p>
+          </motion.div>
+          <motion.div variants={listItem} className="tool-container">
+            <img src={next} alt="" />
+            <p>NextJS</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={js} alt="" />

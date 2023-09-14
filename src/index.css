@@ -291,7 +291,7 @@ p {
   padding: 4rem 0;
   border-radius: 10px;
   justify-content: center;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .tool-container {
@@ -328,7 +328,7 @@ p {
 }
 
 .tools-subheading {
-  transform: translateY(60px);
+  /* transform: translateY(60px); */
   margin: 20px 0;
   text-align: center;
   color: var(--secondary);
@@ -374,6 +374,7 @@ p {
   justify-content: center;
   gap: 6rem;
   width: 80%;
+  margin: 0 auto;
 }
 
 .about-text-container {
@@ -749,7 +750,7 @@ p {
 
 .article-card:hover {
   transform: translateY(-5px);
-  background-color: var(--overlay-7);
+  background-color: var(--overlay-9);
   backdrop-filter: blur(5px);
 }
 
