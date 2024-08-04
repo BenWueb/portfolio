@@ -17,9 +17,9 @@ function About() {
             the world a better place.
           </p>
         </div>
-        <div className="about-image">
+        {/* <div className="about-image">
           <img src={about} alt="" />
-        </div>
+        </div> */}
       </div>
     </section>
   );

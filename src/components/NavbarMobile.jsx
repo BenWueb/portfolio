@@ -139,14 +139,14 @@ function NavbarMobile() {
                   >
                     About
                   </motion.li>
-                  <a href={resume} target="_blank">
+                  {/* <a href={resume} target="_blank">
                     <motion.button
                       variants={mobileListItem}
                       className="mobile-resume btn"
                     >
                       Resume
                     </motion.button>
-                  </a>
+                  </a> */}
                 </motion.div>
               )}
             </AnimatePresence>
@@ -187,11 +187,11 @@ function NavbarMobile() {
               >
                 About
               </motion.li>
-              <a href={resume} target="_blank">
+              {/* <a href={resume} target="_blank">
                 <motion.button variants={listItem} className="resume btn">
                   Resume
                 </motion.button>
-              </a>
+              </a> */}
             </motion.ul>
           </div>
         )}

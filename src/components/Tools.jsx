@@ -7,14 +7,11 @@ import mongodb from "../assets/mongodb-icon-1.svg";
 import node from "../assets/nodejs-icon.svg";
 import react from "../assets/react-2.svg";
 import tailwind from "../assets/tailwind-css-2.svg";
-import mysql from "../assets/mysql-6.svg";
-import graphql from "../assets/graphql-logo-2.svg";
 import wordpress from "../assets/wordpress-blue.svg";
 import seo from "../assets/google-custom-search.svg";
 import python from "../assets/python-5.svg";
 import figma from "../assets/figma.svg";
 import jwt from "../assets/jwt-3.svg";
-import redux from "../assets/redux-logo-svgrepo-com.svg";
 import next from "../assets/nextjs.svg";
 
 function Tools() {
@@ -38,7 +35,7 @@ function Tools() {
     <>
       <section className="tools-container">
         <h2 className="heading ">Skills</h2>
-        <h3 className="tools-subheading">Advanced</h3>
+        <h3 className="tools-subheading">Experienced</h3>
         <motion.div
           variants={toolsContainer}
           initial="hidden"
@@ -65,14 +62,7 @@ function Tools() {
             <img src={firebase} alt="" />
             <p>Google Firebase</p>
           </motion.div>
-        </motion.div>
-        <h3 className="tools-subheading">Experienced</h3>
-        <motion.div
-          variants={toolsContainer}
-          initial="hidden"
-          whileInView="show"
-          className="tools"
-        >
+
           <motion.div variants={listItem} className="tool-container">
             <img src={mongodb} alt="" />
             <p>MongoDB</p>
@@ -92,16 +82,13 @@ function Tools() {
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={seo} alt="" />
-            <p>Search Engine Optimization</p>
+            <p>SEO</p>
           </motion.div>
           <motion.div variants={listItem} className="tool-container">
             <img src={python} alt="" />
             <p>Python</p>
           </motion.div>
-          <motion.div variants={listItem} className="tool-container">
-            <img src={jwt} alt="" />
-            <p>JWT</p>
-          </motion.div>
+
           <motion.div variants={listItem} className="tool-container">
             <img src={figma} alt="" />
             <p>Figma</p>
